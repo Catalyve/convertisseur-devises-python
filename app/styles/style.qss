@@ -1,0 +1,131 @@
+QWidget {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:1,
+        stop:0 #FFFDE7,
+        stop:1 #FFFFFF
+    );
+    color: #2B2B2B;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+QComboBox {
+    background-color: #FFF3C4;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    padding: 7px 16px 7px 10px;
+    min-width: 100px;
+    color: #2B2B2B;
+}
+
+QComboBox:hover {
+    background-color: #FFE082;
+}
+
+QDoubleSpinBox {
+    background-color: #FFF3C4;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    padding: 7px 10px;
+    min-width: 110px;
+    color: #2B2B2B;
+    selection-background-color: #FFD54F;
+}
+
+QDoubleSpinBox:focus {
+    border: 2px solid #FFB300;
+    background-color: #FFE082;
+}
+
+QPushButton {
+    background-color: #FFD54F;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 26px;
+    font-weight: 600;
+    color: #2B2B2B;
+}
+
+QPushButton:hover {
+    background-color: #FFC107;
+}
+
+QPushButton:pressed {
+    background-color: #FFB300;
+}
+
+QPushButton#copierBtn {
+    background-color: #FFF176;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+QPushButton#copierBtn:hover {
+    background-color: #FFD54F;
+}
+
+QLabel {
+    color: #6D4C41;
+    font-size: 13px;
+}
+
+QLabel#tauxLabel {
+    background-color: rgba(255, 215, 0, 0.15);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFD740;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+}
+
+
+QListWidget {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    padding: 8px;
+    color: #2B2B2B;
+}
+
+QListWidget::item {
+    padding: 8px;
+    border-radius: 6px;
+}
+
+QListWidget::item:selected {
+    background-color: #FFE082;
+    color: #2B2B2B;
+}
+
+QSpinBox::up-button,
+QSpinBox::down-button,
+QDoubleSpinBox::up-button,
+QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    width: 18px;
+    background-color: rgba(255, 193, 7, 0.35);
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+QSpinBox::up-button:hover,
+QSpinBox::down-button:hover,
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover {
+    background-color: rgba(255, 179, 0, 0.5);
+}
+
+QSpinBox::up-arrow,
+QDoubleSpinBox::up-arrow {
+    image: url(:/qt-project.org/styles/commonstyle/images/up_arrow.png);
+    width: 8px;
+    height: 8px;
+}
+
+QSpinBox::down-arrow,
+QDoubleSpinBox::down-arrow {
+    image: url(:/qt-project.org/styles/commonstyle/images/down_arrow.png);
+    width: 8px;
+    height: 8px;
+}
